@@ -10,7 +10,7 @@ def parse_arguments(argv):
     arg_help = '{0} -y <input>'.format(argv[0])
 
     try:
-        opts, args = getopt.getopt(argv[1:], "hy", ["help", "year="])
+        opts, args = getopt.getopt(argv[1:], "hy:", ["help", "year="])
     except:
         print(arg_help)
         sys.exit(2)
